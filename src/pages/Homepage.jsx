@@ -181,9 +181,14 @@ const Homepage = () => {
           <h2 className="font-oswald text-7xl md:text-9xl font-black uppercase mb-12 italic">
             READY TO DEFY?
           </h2>
-          <button className="px-20 py-8 bg-val-dark text-white font-black text-2xl uppercase tracking-[0.2em] hover:bg-white hover:text-val-red transition-all">
+          <a
+            href="https://playvalorant.com/en-us/platform-selection/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-20 py-8 bg-val-dark text-white font-black text-2xl uppercase tracking-[0.2em] hover:bg-white hover:text-val-red transition-all"
+          >
             PLAY FREE NOW
-          </button>
+          </a>
         </div>
       </section>
 
