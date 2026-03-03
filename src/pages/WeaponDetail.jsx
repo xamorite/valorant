@@ -13,16 +13,14 @@ import {
   Archive,
 } from "lucide-react";
 
+import NotFoundPage from "./NotFoundPage";
+
 const WeaponDetail = () => {
   const { id } = useParams();
   const weapon = weaponData[id];
 
   if (!weapon) {
-    return (
-      <div className="min-h-screen bg-val-dark flex items-center justify-center text-white font-oswald text-4xl uppercase">
-        Weapon Not Found
-      </div>
-    );
+    return <NotFoundPage />;
   }
 
   return (

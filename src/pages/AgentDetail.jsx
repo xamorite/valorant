@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { agentData } from "../data/agents";
 
+import NotFoundPage from "./NotFoundPage";
+
 const AgentDetail = () => {
   const { id } = useParams();
   const agent = agentData[id];
@@ -14,11 +16,7 @@ const AgentDetail = () => {
   }, [id]);
 
   if (!agent) {
-    return (
-      <div className="min-h-screen bg-val-dark flex items-center justify-center text-white font-oswald text-4xl uppercase">
-        Agent Not Found
-      </div>
-    );
+    return <NotFoundPage />;
   }
 
   return (
