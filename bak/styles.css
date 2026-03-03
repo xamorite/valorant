@@ -1,0 +1,32 @@
+/* Essential Custom CSS only - structural styling handled by Tailwind */
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Custom interactions for script.js to target */
+.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Specific Valorant branding styles hard to express in utility classes */
+.jett-art {
+    filter: drop-shadow(0 0 50px rgba(0, 240, 255, 0.2));
+}
+
+.clip-val {
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.text-stroke {
+    -webkit-text-stroke: 2px #ece8e1;
+}
+
+/* Ability card active state override */
+.ability-card.active {
+    background-color: rgba(255, 70, 85, 0.05);
+    border-color: #ff4655;
+    transform: translateY(-10px);
+}

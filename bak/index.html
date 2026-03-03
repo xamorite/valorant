@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JETT // VALORANT Agent Concept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "val-dark": "#0f1923",
+              "val-darker": "#0b141c",
+              "val-red": "#ff4655",
+              "val-white": "#ece8e1",
+              "val-grey": "#7e7e7e",
+            },
+            fontFamily: {
+              oswald: ["Oswald", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .clip-val {
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+      }
+      .text-stroke {
+        -webkit-text-stroke: 2px #ece8e1;
+      }
+    </style>
+  </head>
+  <body class="bg-val-dark text-val-white font-inter overflow-x-hidden">
+    <header
+      class="navbar fixed top-0 left-0 w-full h-20 bg-val-dark/95 flex items-center justify-between px-6 md:px-10 z-[1000] border-b border-val-white/10 backdrop-blur-md"
+    >
+      <div class="logo">
+        <img
+          src="images/valorant-logo.png"
+          alt="Valorant Logo"
+          id="valorant-logo"
+          class="h-8"
+        />
+      </div>
+      <nav class="nav-links hidden lg:flex gap-8">
+        <a
+          href="#"
+          class="text-val-red font-bold text-sm tracking-[2px] relative py-2 after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-full after:h-[3px] after:bg-val-red"
+          >AGENTS</a
+        >
+        <a
+          href="#"
+          class="text-val-white hover:text-val-red font-bold text-sm tracking-[2px] relative py-2 transition-all"
+          >MAPS</a
+        >
+        <a
+          href="#"
+          class="text-val-white hover:text-val-red font-bold text-sm tracking-[2px] relative py-2 transition-all"
+          >ARSENAL</a
+        >
+        <a
+          href="#"
+          class="text-val-white hover:text-val-red font-bold text-sm tracking-[2px] relative py-2 transition-all"
+          >MEDIA</a
+        >
+        <a
+          href="#"
+          class="text-val-white hover:text-val-red font-bold text-sm tracking-[2px] relative py-2 transition-all"
+          >NEWS</a
+        >
+      </nav>
+      <div class="nav-right flex items-center gap-5">
+        <button
+          class="lang-btn bg-transparent border border-val-white text-val-white px-2.5 py-1.5 cursor-pointer font-bold hidden sm:block uppercase"
+        >
+          EN
+        </button>
+        <button
+          class="cta-nav bg-val-red text-white border-none px-6 py-2.5 font-black cursor-pointer clip-val hover:bg-white hover:text-val-red transition-all uppercase"
+        >
+          PLAY NOW
+        </button>
+        <div
+          class="hamburger lg:hidden flex flex-col gap-1.5 cursor-pointer"
+          id="hamburger"
+        >
+          <span class="w-6 h-[3px] bg-val-white"></span>
+          <span class="w-6 h-[3px] bg-val-white"></span>
+          <span class="w-6 h-[3px] bg-val-white"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="hero relative w-full h-screen flex items-center justify-center overflow-hidden pt-20"
+        id="hero"
+      >
+        <div class="hero-bg absolute top-0 left-0 w-full h-full z-[-1]">
+          <img
+            src="images/jett-background.jpg"
+            alt="Background"
+            class="parallax-bg w-full h-full object-cover brightness-[0.4]"
+          />
+        </div>
+        <div
+          class="container mx-auto px-5 flex flex-col lg:flex-row items-center justify-between"
+        >
+          <div
+            class="agent-info flex-1 max-w-[600px] z-[2] text-center lg:text-left"
+          >
+            <span
+              class="role-tag block text-sm font-bold text-val-white tracking-[4px] mb-2 uppercase"
+              >// DUELIST</span
+            >
+            <h1
+              class="agent-name font-oswald text-[70px] md:text-[100px] lg:text-[150px] leading-[0.9] font-black mb-5 bg-gradient-to-b from-white/10 to-transparent bg-clip-text text-transparent text-stroke uppercase"
+            >
+              JETT
+            </h1>
+            <p
+              class="agent-tagline text-lg text-val-grey mb-10 max-w-md mx-auto lg:mx-0"
+            >
+              Representing her home country of South Korea, Jett's agile and
+              evasive fighting style lets her take risks no one else can. She
+              runs circles around every skirmish, cutting enemies before they
+              even know what hit them.
+            </p>
+            <div
+              class="hero-actions flex gap-5 justify-center lg:justify-start"
+            >
+              <button
+                class="btn-primary bg-val-red text-white border-none px-10 py-4 font-black text-lg cursor-pointer clip-val uppercase"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="btn-secondary bg-transparent text-val-white border-2 border-val-white px-10 py-4 font-black text-lg cursor-pointer clip-val hover:bg-val-white/10 transition-all uppercase"
+              >
+                BECOME A PRO
+              </button>
+            </div>
+          </div>
+          <div
+            class="agent-visual flex-1 flex justify-center lg:justify-end relative mt-12 lg:mt-0"
+          >
+            <img
+              src="images/jett-hero.png"
+              alt="Jett Character Art"
+              class="jett-art max-h-[70vh] lg:max-h-[90vh] object-contain drop-shadow-[0_0_50px_rgba(0,240,255,0.2)] animate-float"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="abilities py-24 bg-val-darker" id="abilities">
+        <div class="container mx-auto px-5">
+          <h2
+            class="section-title font-oswald text-4xl md:text-5xl text-val-red mb-16 tracking-[2px] uppercase"
+          >
+            SPECIAL ABILITIES
+          </h2>
+          <div
+            class="abilities-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <!-- Ability 1 -->
+            <div
+              class="ability-card bg-white/[0.03] rounded p-10 border border-white/[0.05] transition-all duration-[600ms] cursor-pointer hover:bg-val-red/5 hover:border-val-red hover:-translate-y-2.5"
+              data-ability="cloudburst"
+            >
+              <div
+                class="ability-header flex justify-between items-center mb-8"
+              >
+                <img
+                  src="images/ability-cloudburst.png"
+                  alt="Cloudburst"
+                  class="w-12 h-12 object-contain"
+                />
+                <span class="key-bind font-oswald text-2xl text-val-grey"
+                  >C</span
+                >
+              </div>
+              <h3 class="font-oswald text-2xl mb-4 uppercase">CLOUDBURST</h3>
+              <p class="text-val-grey text-sm">
+                INSTANTLY throw a projectile that expands into a brief
+                vision-blocking cloud on impact with a surface. HOLD the ability
+                key to curve the cloud.
+              </p>
+            </div>
+            <!-- Ability 2 -->
+            <div
+              class="ability-card bg-white/[0.03] rounded p-10 border border-white/[0.05] transition-all duration-[600ms] cursor-pointer hover:bg-val-red/5 hover:border-val-red hover:-translate-y-2.5"
+              data-ability="updraft"
+            >
+              <div
+                class="ability-header flex justify-between items-center mb-8"
+              >
+                <img
+                  src="images/ability-updraft.png"
+                  alt="Updraft"
+                  class="w-12 h-12 object-contain"
+                />
+                <span class="key-bind font-oswald text-2xl text-val-grey"
+                  >Q</span
+                >
+              </div>
+              <h3 class="font-oswald text-2xl mb-4 uppercase">UPDRAFT</h3>
+              <p class="text-val-grey text-sm">
+                INSTANTLY impel Jett high into the air.
+              </p>
+            </div>
+            <!-- Ability 3 -->
+            <div
+              class="ability-card active bg-val-red/5 border-val-red -translate-y-2.5 bg-white/[0.03] rounded p-10 border transition-all duration-[600ms] cursor-pointer"
+              data-ability="tailwind"
+            >
+              <div
+                class="ability-header flex justify-between items-center mb-8"
+              >
+                <img
+                  src="images/ability-tailwind.png"
+                  alt="Tailwind"
+                  class="w-12 h-12 object-contain"
+                />
+                <span class="key-bind font-oswald text-2xl text-val-grey"
+                  >E</span
+                >
+              </div>
+              <h3 class="font-oswald text-2xl mb-4 uppercase">TAILWIND</h3>
+              <p class="text-val-grey text-sm">
+                INSTANTLY impel Jett in the direction she is moving. If Jett is
+                standing still, she will impel forward.
+              </p>
+            </div>
+            <!-- Ability 4 -->
+            <div
+              class="ability-card bg-white/[0.03] rounded p-10 border border-white/[0.05] transition-all duration-[600ms] cursor-pointer hover:bg-val-red/5 hover:border-val-red hover:-translate-y-2.5"
+              data-ability="bladestorm"
+            >
+              <div
+                class="ability-header flex justify-between items-center mb-8"
+              >
+                <img
+                  src="images/ability-bladestorm.png"
+                  alt="Blade Storm"
+                  class="w-12 h-12 object-contain"
+                />
+                <span class="key-bind font-oswald text-2xl text-val-grey"
+                  >X</span
+                >
+              </div>
+              <h3 class="font-oswald text-2xl mb-4 uppercase">BLADE STORM</h3>
+              <p class="text-val-grey text-sm">
+                EQUIP a set of highly accurate throwing knives that recharge on
+                killing an opponent. FIRE to throw a single knife.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bio py-24" id="bio">
+        <div
+          class="container mx-auto px-5 flex flex-col lg:flex-row items-center gap-10 lg:gap-20"
+        >
+          <div class="bio-image flex-1 w-full">
+            <img
+              src="images/jett-bio.jpg"
+              alt="Jett In-game"
+              class="w-full rounded border border-val-red"
+            />
+          </div>
+          <div class="bio-text flex-1 text-center lg:text-left">
+            <h2
+              class="section-title font-oswald text-4xl md:text-5xl mb-10 tracking-[2px] uppercase"
+            >
+              BIOGRAPHY
+            </h2>
+            <p class="text-xl text-val-grey mb-10">
+              From the streets of Seoul to the battlefields of VALORANT, Jett is
+              the ultimate speedster. Her agility isn't just for show; it's a
+              weapon that keeps her one step ahead of the competition.
+            </p>
+            <div class="stats flex gap-10 justify-center lg:justify-start">
+              <div class="stat-item flex flex-col">
+                <span
+                  class="stat-label text-[12px] text-val-red font-bold mb-1 uppercase"
+                  >ORIGIN</span
+                >
+                <span
+                  class="stat-value font-oswald text-3xl md:text-4xl uppercase"
+                  >SOUTH KOREA</span
+                >
+              </div>
+              <div class="stat-item flex flex-col">
+                <span
+                  class="stat-label text-[12px] text-val-red font-bold mb-1 uppercase"
+                  >ROLE</span
+                >
+                <span
+                  class="stat-value font-oswald text-3xl md:text-4xl uppercase"
+                  >DUELIST</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-20 pb-10 bg-black">
+      <div class="container mx-auto px-5">
+        <div
+          class="footer-top flex flex-col md:flex-row justify-between items-center gap-8 mb-10"
+        >
+          <img src="images/valorant-logo.png" alt="Valorant Logo" class="h-6" />
+          <div class="social-links flex gap-5">
+            <a
+              href="#"
+              class="text-val-white hover:text-val-red font-bold text-[12px] uppercase transition-all"
+              >TWITTER</a
+            >
+            <a
+              href="#"
+              class="text-val-white hover:text-val-red font-bold text-[12px] uppercase transition-all"
+              >INSTAGRAM</a
+            >
+            <a
+              href="#"
+              class="text-val-white hover:text-val-red font-bold text-[12px] uppercase transition-all"
+              >YOUTUBE</a
+            >
+            <a
+              href="#"
+              class="text-val-white hover:text-val-red font-bold text-[12px] uppercase transition-all"
+              >DISCORD</a
+            >
+          </div>
+        </div>
+        <hr class="footer-hr border-none border-t border-white/10 mb-10" />
+        <div
+          class="footer-bottom flex flex-col md:flex-row justify-between items-center gap-8 text-val-grey text-[10px] text-center md:text-left"
+        >
+          <p>
+            &copy; 2026 RIOT GAMES, INC. RIOT GAMES, VALORANT, AND ANY
+            ASSOCIATED LOGOS ARE TRADEMARKS, SERVICE MARKS, AND/OR REGISTERED
+            TRADEMARKS OF RIOT GAMES, INC.
+          </p>
+          <div class="footer-links flex gap-5">
+            <a
+              href="#"
+              class="text-val-grey hover:text-val-white transition-all"
+              >PRIVACY POLICY</a
+            >
+            <a
+              href="#"
+              class="text-val-grey hover:text-val-white transition-all"
+              >TERMS OF SERVICE</a
+            >
+            <a
+              href="#"
+              class="text-val-grey hover:text-val-white transition-all"
+              >COOKIES</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

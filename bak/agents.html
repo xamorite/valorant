@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGENTS // VALORANT Concept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "val-dark": "#0f1923",
+              "val-darker": "#0b141c",
+              "val-red": "#ff4655",
+              "val-white": "#ece8e1",
+              "val-grey": "#7e7e7e",
+            },
+            fontFamily: {
+              oswald: ["Oswald", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .diagonal-split {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background: linear-gradient(135deg, #ff4655 40%, #0f1923 40%);
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+      }
+      .agent-card-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-val-dark text-val-white font-inter overflow-x-hidden min-h-screen flex flex-col"
+  >
+    <!-- Top Header -->
+    <header
+      class="flex items-center justify-between px-6 py-4 bg-val-darker/50 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-white/5"
+    >
+      <div class="flex items-center gap-6">
+        <img
+          src="images/riot_logo.png"
+          alt="Riot Logo"
+          class="h-6 opacity-70 hover:opacity-100 transition-opacity"
+        />
+        <div class="h-4 w-[1px] bg-white/20"></div>
+        <img src="images/valorant_logo.png" alt="Valorant Logo" class="h-5" />
+      </div>
+      <nav class="hidden lg:flex gap-6">
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >GAME</a
+        >
+        <a
+          href="agents.html"
+          class="text-[10px] font-black tracking-widest text-val-red"
+          >CHAMPIONS</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >NEWS</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >PATCH NOTES</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >DISCOVER</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >ESPORTS</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >UNIVERSE</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >SHOP</a
+        >
+        <a
+          href="#"
+          class="text-[10px] font-black tracking-widest hover:text-val-red transition-colors"
+          >SUPPORT</a
+        >
+      </nav>
+      <div class="flex items-center gap-4">
+        <span class="text-[10px] font-bold opacity-70">UNBPICKD</span>
+        <div
+          class="w-8 h-8 rounded bg-val-red/20 border border-val-red/50"
+        ></div>
+      </div>
+    </header>
+
+    <main class="flex-grow pt-24 relative overflow-hidden flex flex-col">
+      <!-- Background "AGENTS" Text -->
+      <h1
+        class="vertical-text absolute left-10 top-1/2 -translate-y-1/2 font-oswald text-[12vw] font-black opacity-[0.03] select-none pointer-events-none"
+      >
+        AGENTS
+      </h1>
+
+      <!-- Diagonal Background -->
+      <div class="diagonal-split absolute inset-0 z-[-1] opacity-50"></div>
+
+      <!-- Agent Selection Content -->
+      <div class="container mx-auto px-6 mt-10">
+        <div
+          class="flex flex-col lg:flex-row gap-8 items-stretch justify-center h-[55vh]"
+        >
+          <!-- Agent Card: Phoenix -->
+          <div
+            class="agent-select-card group flex-1 relative bg-white/5 border border-white/10 overflow-hidden cursor-pointer transition-all duration-500 hover:flex-[1.5] hover:border-val-red"
+            data-agent="phoenix"
+          >
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 flex flex-col items-center"
+            >
+              <span
+                class="agent-card-text font-oswald text-4xl font-black uppercase opacity-20 group-hover:opacity-100 group-hover:text-val-red transition-all"
+                >PHOENIX</span
+              >
+              <span
+                class="agent-card-text text-[8px] font-bold mt-4 opacity-40 uppercase tracking-widest mt-8"
+                >UNITED KINGDOM</span
+              >
+            </div>
+            <img
+              src="images/agent_phoenix_full.png"
+              alt="Phoenix"
+              class="absolute bottom-0 right-[-10%] h-[90%] object-contain group-hover:scale-110 transition-transform duration-700"
+            />
+            <div
+              class="absolute bottom-4 left-4 right-4 flex justify-between items-end"
+            >
+              <div class="flex gap-2">
+                <div class="w-2 h-2 bg-val-red"></div>
+                <div class="w-2 h-2 bg-white/20"></div>
+                <div class="w-2 h-2 bg-white/20"></div>
+                <div class="w-2 h-2 bg-white/20"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent Card: Jett -->
+          <a
+            href="index.html"
+            class="agent-select-card group flex-1 relative bg-white/5 border border-white/10 overflow-hidden cursor-pointer transition-all duration-500 hover:flex-[1.5] hover:border-val-red"
+            data-agent="jett"
+          >
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 flex flex-col items-center"
+            >
+              <span
+                class="agent-card-text font-oswald text-4xl font-black uppercase opacity-20 group-hover:opacity-100 group-hover:text-val-red transition-all"
+                >JETT</span
+              >
+              <span
+                class="agent-card-text text-[8px] font-bold mt-4 opacity-40 uppercase tracking-widest mt-8"
+                >SOUTH KOREA</span
+              >
+            </div>
+            <img
+              src="images/agent_jett_full.png"
+              alt="Jett"
+              class="absolute bottom-0 right-[-10%] h-[90%] object-contain group-hover:scale-110 transition-transform duration-700"
+            />
+          </a>
+
+          <!-- Agent Card: Sova -->
+          <div
+            class="agent-select-card group flex-1 relative bg-white/5 border border-white/10 overflow-hidden cursor-pointer transition-all duration-500 hover:flex-[1.5] hover:border-val-red"
+            data-agent="sova"
+          >
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 flex flex-col items-center"
+            >
+              <span
+                class="agent-card-text font-oswald text-4xl font-black uppercase opacity-20 group-hover:opacity-100 group-hover:text-val-red transition-all"
+                >SOVA</span
+              >
+              <span
+                class="agent-card-text text-[8px] font-bold mt-4 opacity-40 uppercase tracking-widest mt-8"
+                >RUSSIA</span
+              >
+            </div>
+            <img
+              src="images/agent_sova_full.png"
+              alt="Sova"
+              class="absolute bottom-0 right-[-5%] h-[90%] object-contain group-hover:scale-110 transition-transform duration-700"
+            />
+          </div>
+
+          <!-- Agent Card: Sage (Active) -->
+          <div
+            class="agent-select-card group flex-[1.5] relative bg-val-white border border-val-red overflow-hidden cursor-pointer transition-all duration-500 select-active"
+            data-agent="sage"
+          >
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 flex flex-col items-center z-10"
+            >
+              <span
+                class="agent-card-text font-oswald text-4xl font-black uppercase text-val-red"
+                >SAGE</span
+              >
+              <span
+                class="agent-card-text text-[8px] font-bold mt-4 text-val-dark/60 uppercase tracking-widest mt-8"
+                >CHINA</span
+              >
+            </div>
+            <img
+              src="images/agent_sage_full.png"
+              alt="Sage"
+              class="absolute bottom-0 right-[-5%] h-[95%] object-contain scale-110 transition-transform duration-700"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Ability Detail Bar (Fixed at bottom) -->
+      <div class="bg-val-darker border-t border-white/5 mt-auto py-8">
+        <div class="container mx-auto px-6">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-12"
+          >
+            <!-- Ability: Basic -->
+            <div class="flex items-center gap-6 group">
+              <div
+                class="w-16 h-16 bg-val-red flex items-center justify-center rounded"
+              >
+                <img
+                  src="images/icon_ability_slow_orb.png"
+                  alt="Slow Orb"
+                  id="ability-icon-basic"
+                  class="w-10 h-10 object-contain"
+                />
+              </div>
+              <div class="max-w-[200px]">
+                <span
+                  class="text-[10px] font-black text-val-red tracking-widest uppercase"
+                  >BASIC</span
+                >
+                <h3
+                  class="font-oswald text-lg uppercase leading-tight"
+                  id="ability-name-basic"
+                >
+                  SLOW ORB
+                </h3>
+                <p
+                  class="text-[11px] text-val-grey mt-1 line-clamp-2"
+                  id="ability-desc-basic"
+                >
+                  EQUIP a slowing orb. FIRE to throw a slowing orb forward that
+                  detonates upon landing.
+                </p>
+              </div>
+            </div>
+
+            <!-- Ability: Signature -->
+            <div class="flex items-center gap-6 group">
+              <div
+                class="w-16 h-16 bg-val-white flex items-center justify-center rounded"
+              >
+                <img
+                  src="images/icon_ability_healing_orb.png"
+                  alt="Healing Orb"
+                  id="ability-icon-signature"
+                  class="w-10 h-10 object-contain brightness-0"
+                />
+              </div>
+              <div class="max-w-[200px]">
+                <span
+                  class="text-[10px] font-black text-val-red tracking-widest uppercase"
+                  >SIGNATURE</span
+                >
+                <h3
+                  class="font-oswald text-lg uppercase leading-tight"
+                  id="ability-name-signature"
+                >
+                  HEALING ORB
+                </h3>
+                <p
+                  class="text-[11px] text-val-grey mt-1 line-clamp-2"
+                  id="ability-desc-signature"
+                >
+                  EQUIP a healing orb. FIRE with your crosshairs over a damaged
+                  ally to activate a heal-over-time.
+                </p>
+              </div>
+            </div>
+
+            <!-- Ability: Ultimate -->
+            <div class="flex items-center gap-6 group relative">
+              <div
+                class="w-16 h-16 bg-val-red flex items-center justify-center rounded overflow-hidden"
+              >
+                <img
+                  src="images/icon_ability_resurrection.png"
+                  alt="Resurrection"
+                  id="ability-icon-ultimate"
+                  class="w-10 h-10 object-contain animate-pulse"
+                />
+                <div
+                  class="absolute inset-0 bg-white/10 origin-bottom scale-y-75 group-hover:scale-y-100 transition-transform"
+                ></div>
+              </div>
+              <div class="max-w-[200px]">
+                <span
+                  class="text-[10px] font-black text-val-red tracking-widest uppercase"
+                  >ULTIMATE</span
+                >
+                <h3
+                  class="font-oswald text-lg uppercase leading-tight"
+                  id="ability-name-ultimate"
+                >
+                  RESURRECTION
+                </h3>
+                <p
+                  class="text-[11px] text-val-grey mt-1 line-clamp-2"
+                  id="ability-desc-ultimate"
+                >
+                  EQUIP a resurrection ability. FIRE with your crosshairs over a
+                  dead ally to begin resurrecting them.
+                </p>
+              </div>
+            </div>
+
+            <!-- Next Navigation -->
+            <div class="ml-auto">
+              <button
+                class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-val-red hover:border-val-red transition-all"
+              >
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-white">
+                  <path
+                    d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
