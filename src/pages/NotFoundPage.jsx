@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import jinx404 from "../assets/jinx-404.png";
 
 const NotFoundPage = () => {
   return (
@@ -49,7 +50,7 @@ const NotFoundPage = () => {
           >
             {/* Character Art (Jinx Style) */}
             <img
-              src="/src/assets/jinx-404.png"
+              src={jinx404}
               alt="Jinx 404"
               className="max-h-[70vh] object-contain drop-shadow-[0_0_50px_rgba(77,77,255,0.3)]"
             />

@@ -1,15 +1,12 @@
 import React from "react";
+import valorantLogo from "../assets/valorant-logo.png";
 
 const Footer = () => {
   return (
     <footer className="footer py-20 pb-10 bg-black mt-auto">
       <div className="container mx-auto px-5">
         <div className="footer-top flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
-          <img
-            src="/src/assets/valorant-logo.png"
-            alt="Valorant Logo"
-            className="h-6"
-          />
+          <img src={valorantLogo} alt="Valorant Logo" className="h-6" />
           <div className="social-links flex gap-5">
             <a
               href="#"
