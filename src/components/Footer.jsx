@@ -65,6 +65,19 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="mt-8 text-right">
+          <span className="text-val-grey text-[10px]">
+            built by{" "}
+            <a
+              href="https://xamorite.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-val-red hover:text-white font-bold transition-all"
+            >
+              xamorite
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   );
